@@ -8,11 +8,11 @@ class Logger(object):
         file_handler = logging.FileHandler(file_path, 'a', encoding="utf-8")
         fmt = logging.Formatter(fmt='%(asctime)s - %(name)s - %(levelname)s - %(module)s : %(message)s')
         file_handler.setFormatter(fmt)
-        self.logger = logging.Logger('cmdb', level=level)
-        self.logger.addHandler(file_handler)
+        self.logger1 = logging.Logger('cmdb', level=level)
+        self.logger1.addHandler(file_handler)
 
     def error(self, msg):
-        self.logger.error(msg)
+        self.logger1.error(msg)
 
 
-logger = Logger(settings.LOGGING_PATH, settings.LOGGING_LEVEL)
+logger = Logger(settings.LOGGING_PATH, logging.DEBUG)

@@ -2,6 +2,7 @@ from lib.plugins import get_server_info
 import settings
 import paramiko
 from concurrent.futures import ThreadPoolExecutor
+from lib.plugins.basic import BasicPlugin
 
 
 def ssh(hostname, cmd):
@@ -21,6 +22,8 @@ def task(host):
 
 
 def run():
+    # basic = BasicPlugin(ssh,'192.168.226.128')
+
     pool = ThreadPoolExecutor(10)
     hosts = [
         '192.168.226.128',

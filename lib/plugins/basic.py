@@ -2,7 +2,7 @@ import sys, os, time
 from .base import BasePlugin
 import traceback
 from lib.utils.log import logger
-
+from lib.plugins.response import BaseResponse
 
 class BasicPlugin(BasePlugin):
     # def process(self, ssh, hostname):
@@ -10,9 +10,11 @@ class BasicPlugin(BasePlugin):
     #     return result.decode("utf8")
 
     def process(self, ssh, hostname):
-        result = None
+        result = BaseResponse()
         try:
-            result = int('sdfsf')
+            result.data = ssh(hostname, 'uname -a').decode("utf8")
         except Exception as e:
             logger.error(traceback.format_exc())
-        return result
+            result.error = traceback.format_exc()
+            result.status = False
+        return result.dict

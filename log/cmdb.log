@@ -1,0 +1,21 @@
+
+2020-05-18 17:06:21,967 - cmdb - ERROR - log : Traceback (most recent call last):
+  File "D:\github_project\python_autoclient\CMDB\lib\plugins\basic.py", line 15, in process
+    result = int('sdfsf')
+ValueError: invalid literal for int() with base 10: 'sdfsf'
+
+2020-05-18 17:06:21,991 - cmdb - ERROR - log : Traceback (most recent call last):
+  File "D:\github_project\python_autoclient\CMDB\lib\plugins\basic.py", line 15, in process
+    result = int('sdfsf')
+ValueError: invalid literal for int() with base 10: 'sdfsf'
+
+2020-05-18 17:48:30,754 - cmdb - ERROR - log : Traceback (most recent call last):
+  File "D:\github_project\python_autoclient\CMDB\lib\plugins\basic.py", line 15, in process
+    result.data = int('sfsdf')
+ValueError: invalid literal for int() with base 10: 'sfsdf'
+
+2020-05-18 17:48:30,756 - cmdb - ERROR - log : Traceback (most recent call last):
+  File "D:\github_project\python_autoclient\CMDB\lib\plugins\basic.py", line 15, in process
+    result.data = int('sfsdf')
+ValueError: invalid literal for int() with base 10: 'sfsdf'
+
