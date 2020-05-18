@@ -2,7 +2,7 @@ PLUGIN_CLASS_DICT = {
     'disk': 'lib.plugins.disk.DiskPlugin',
     'memory': 'lib.plugins.memory.MemoryPlugin',
     'network': 'lib.plugins.network.NetworkPlugin',
-    # 'base': 'lib.plugins.base.BasePlugin',
+    'basic': 'lib.plugins.basic.BasicPlugin',
 }
 
 SSH_USER = 'root'

@@ -24,7 +24,7 @@ def run():
     pool = ThreadPoolExecutor(10)
     hosts = [
         '192.168.226.128',
-        # '192.168.226.130',
+        '192.168.226.129',
     ]
     for host in hosts:
         pool.submit(task, host)
